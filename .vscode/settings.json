@@ -3,5 +3,8 @@
     "C_Cpp.default.configurationProvider": "particle.particle-vscode-core",
     "files.associations": {
         "*.ino": "cpp"
-    }
+    },
+    "licenser.license": "GPLv3",
+    "licenser.author": "David Richards / ravenIot LLC",
+    "licenser.projectName": "maxPhoton4"
 }
