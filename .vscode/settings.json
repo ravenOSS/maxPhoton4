@@ -8,7 +8,7 @@
     "licenser.author": "David Richards / ravenIot LLC",
     "licenser.projectName": "maxPhoton4",
     "particle.targetDevice": "ravenPhoton05_19",
-    "particle.firmwareVersion": "1.0.1",
+    "particle.firmwareVersion": "1.0.1-rc.1",
     "particle.targetPlatform": "photon",
     "cortex-debug.openocdPath": "/Users/raventt/.particle/toolchains/openocd/0.10.0-particle.1/bin/openocd"
 }

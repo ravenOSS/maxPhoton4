@@ -7,6 +7,9 @@
  * Date: May 22, 2019
  */
 
+// If controller does NOT have a hardware serial port available (e.g. Serial1),
+// add and configure SoftwareSerial and define Rx & Tx pins. Can also invert RS232.
+
 // Using hardware UART on Photon
 // Maxbotix sensor with RS232 conversion to TTL with MAX3232
 // Name mySerial => Serial1 (Photon definition)
@@ -14,7 +17,7 @@
 void setup();
 void loop();
 int maxRead();
-#line 12 "/Users/raventt/MBP_Projects/arduino/maxPhoton4/src/maxPhoton4.ino"
+#line 15 "/Users/raventt/MBP_Projects/arduino/maxPhoton4/src/maxPhoton4.ino"
 char inChar; // type for data read
 char buf[5]; // array to store range data
 int range = 0;   // type declaration
@@ -51,7 +54,7 @@ int maxRead()
   if (Serial1.available() != 0){
     Serial1.read();
   }
-  while (Serial1.available() > 0)
+  if (Serial1.available() > 0)
   {
     inChar = Serial1.read();
     if (inChar == 82)
